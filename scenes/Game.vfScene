@@ -1,0 +1,172 @@
+{
+  "audioSettings": {
+    "buses": [
+      {
+        "name": "Master",
+        "parentName": "",
+        "defaultVolume": 1.0
+      },
+      {
+        "name": "Music",
+        "parentName": "Master",
+        "defaultVolume": 0.7
+      },
+      {
+        "name": "SFX",
+        "parentName": "Master",
+        "defaultVolume": 1.0
+      },
+      {
+        "name": "Ambient",
+        "parentName": "Master",
+        "defaultVolume": 0.5
+      }
+    ],
+    "distanceFilter": {
+      "defaultIntensity": 1.0,
+      "defaultMaxDistance": 100.0,
+      "defaultStartDistance": 10.0,
+      "enabled": true
+    },
+    "distanceModel": {
+      "defaultRolloffFactor": 1.0,
+      "model": "inverseDistanceClamped"
+    },
+    "listener": {
+      "dopplerFactor": 1.0,
+      "masterVolume": 1.0,
+      "speedOfSound": 343.3
+    },
+    "mixSnapshots": []
+  },
+  "physicsSettings": {
+    "collisionLayers": [
+      { "builtIn": true, "index": 0, "name": "Static" },
+      { "builtIn": true, "index": 1, "name": "Dynamic" },
+      { "builtIn": true, "index": 2, "name": "Kinematic" },
+      { "builtIn": true, "index": 3, "name": "Sensor" }
+    ],
+    "collisionMatrix": [
+      [false, true, true, false],
+      [true, true, true, true],
+      [true, true, false, true],
+      [false, true, true, false]
+    ],
+    "gravity": [0.0, -9.81, 0.0],
+    "gravityScale": 1.0,
+    "simulation": {
+      "fixedTimestep": 0.016666666666666666,
+      "maxAccumulator": 0.25,
+      "maxStepsPerFrame": 8
+    },
+    "sleepThresholds": {
+      "angularVelocity": 0.05,
+      "linearVelocity": 0.05,
+      "timeToSleep": 0.5
+    },
+    "vfxCollision": { "maxSceneColliders": 32 }
+  },
+  "renderSettings": {
+    "animationLOD": {
+      "lod0Distance": 25.0, "lod0Interval": 1,
+      "lod1Distance": 75.0, "lod1Interval": 2,
+      "lod2Distance": 150.0, "lod2Interval": 6,
+      "lod3Distance": 300.0, "maxStreamingInitPerFrame": 4
+    },
+    "atmosphere": {
+      "aerialIntensity": 1.0, "aerialMaxDist": 100000.0,
+      "atmosphereRadius": 6460000.0, "cycleSpeed": 1.0,
+      "dayNightEnabled": true, "enabled": true,
+      "groundAlbedo": [0.3, 0.3, 0.3],
+      "mieAbsorption": 4.4e-06, "mieAnisotropy": 0.8,
+      "mieDensityExpScale": -0.0008333333, "mieScattering": 3.996e-06,
+      "moonAngularRadius": 0.009, "moonAzimuth": 180.0,
+      "moonBrightness": 0.03, "moonElevation": -45.0,
+      "moonPhaseOffset": 0.0, "nightSkyBrightness": 0.002,
+      "ozoneAbsorption": [6.5e-07, 1.881e-06, 8.5e-08],
+      "ozoneCenterAlt": 25000.0, "ozoneWidth": 15000.0,
+      "planetRadius": 6360000.0, "rayleighDensityExpScale": -0.000125,
+      "rayleighScattering": [5.802e-06, 1.3558e-05, 3.31e-05],
+      "starBrightness": 1.5, "starDensity": 0.006, "starTwinkleSpeed": 1.0,
+      "sunAngularRadius": 0.00935, "sunAzimuth": 0.0, "sunElevation": 45.0,
+      "sunIrradiance": [1.474, 1.8504, 1.91198], "timeOfDay": 12.0
+    },
+    "cloud": { "enabled": false },
+    "culling": {
+      "frustumCullingEnabled": true, "globalLodBias": 0.0,
+      "lodCrossfadeEnabled": true, "lodSelectionEnabled": true,
+      "meshletBackfaceCullingEnabled": true, "meshletFrustumCullingEnabled": true,
+      "meshletOcclusionCullingEnabled": true, "occlusionCullingEnabled": true,
+      "terrainFrustumCullingEnabled": true, "terrainMeshletCullingEnabled": true
+    },
+    "distanceCulling": { "enabled": false },
+    "gi": { "enabled": false },
+    "postProcess": { "enabled": true,
+      "autoExposure": { "enabled": true, "adaptSpeedDown": 1.0, "adaptSpeedUp": 3.0,
+        "exposureCompensation": 0.0, "highPercentile": 0.9, "lowPercentile": 0.1,
+        "maxExposure": 10.0, "minExposure": 0.1 },
+      "bloom": { "enabled": true, "intensity": 0.3, "passes": 5, "radius": 0.5, "threshold": 0.8 },
+      "toneMapping": { "enabled": true, "contrast": 1.0, "exposure": 1.0, "gamma": 2.2, "mode": "aces" }
+    },
+    "rtShadows": { "enabled": false },
+    "shadows": { "enabled": true, "normalBias": 0.02, "pointResolution": 512,
+      "quality": "high", "shadowBias": 0.005, "shadowIntensity": 0.5,
+      "slopeBias": 1.5, "softShadows": true, "spotResolution": 1024 },
+    "terrain": { "enabled": true, "errorThreshold": 2.0, "lodBias": 1.0, "textureScale": 0.1 },
+    "transparency": { "wboitEnabled": true },
+    "vfxLOD": { "lod0Distance": 50.0, "lod1Distance": 100.0, "lod2Distance": 200.0, "transitionZone": 10.0 }
+  },
+  "root": {
+    "uuid": 2000000000000000001,
+    "name": "Root",
+    "isActive": true,
+    "transform": {
+      "position": [0.0, 0.0, 0.0],
+      "rotation": [0.0, 0.0, 0.0],
+      "scale": [1.0, 1.0, 1.0],
+      "isStatic": true
+    },
+    "components": {},
+    "children": [
+      {
+        "uuid": 2000000000000000002,
+        "name": "GameCamera",
+        "isActive": true,
+        "transform": {
+          "position": [0.0, 10.0, -20.0],
+          "rotation": [-15.0, 0.0, 0.0],
+          "scale": [1.0, 1.0, 1.0],
+          "isStatic": false
+        },
+        "components": {
+          "camera": {
+            "cameraId": 0,
+            "fieldOfView": 60.0,
+            "nearPlane": 0.1,
+            "farPlane": 10000.0,
+            "aspectRatio": 1.7777,
+            "isPerspective": true,
+            "isPrimary": true,
+            "showFrustum": false,
+            "orthoSize": 5.0
+          }
+        },
+        "children": []
+      },
+      {
+        "uuid": 2000000000000000003,
+        "name": "DirectionalLight",
+        "isActive": true,
+        "transform": {
+          "position": [0.0, 100.0, 0.0],
+          "rotation": [-45.0, 30.0, 0.0],
+          "scale": [1.0, 1.0, 1.0],
+          "isStatic": false
+        },
+        "components": {},
+        "children": []
+      }
+    ]
+  },
+  "version": "1.0"
+}

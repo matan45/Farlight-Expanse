@@ -1,8 +1,12 @@
 {
   "assets": {
+    "a7c3e91f0b48d265": {
+      "path": "C:/matan/Farlight Expanse/scenes/Game.vfScene",
+      "type": "Scene"
+    },
     "bd160354db12ecf1": {
       "path": "C:/matan/Farlight Expanse/scenes/Main.vfScene",
-      "type": "Unknown"
+      "type": "Scene"
     }
   },
   "dependencies": {},
