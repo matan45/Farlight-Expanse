@@ -7,6 +7,14 @@
     "bd160354db12ecf1": {
       "path": "C:/matan/Farlight Expanse/scenes/Main.vfScene",
       "type": "Scene"
+    },
+    "c1a2b3d4e5f60001": {
+      "path": "C:/matan/Farlight Expanse/scripts/game/menu/MainMenuController.mt",
+      "type": "Script"
+    },
+    "c1a2b3d4e5f60002": {
+      "path": "C:/matan/Farlight Expanse/scripts/game/menu/CameraOrbitController.mt",
+      "type": "Script"
     }
   },
   "dependencies": {},

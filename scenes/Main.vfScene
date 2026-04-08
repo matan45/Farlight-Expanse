@@ -460,7 +460,8 @@
             "scripts": [
               {
                 "enabled": true,
-                "scriptRef": "0000000000000000"
+                "scriptRef": "c1a2b3d4e5f60002",
+                "scriptRefPath": "scripts/game/menu/CameraOrbitController.mt"
               }
             ]
           }
@@ -3780,7 +3781,8 @@
             "scripts": [
               {
                 "enabled": true,
-                "scriptRef": "0000000000000000"
+                "scriptRef": "c1a2b3d4e5f60001",
+                "scriptRefPath": "scripts/game/menu/MainMenuController.mt"
               }
             ]
           }
