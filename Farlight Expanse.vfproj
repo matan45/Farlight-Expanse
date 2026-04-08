@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0",
+  "projectName": "Farlight Expanse",
+  "version": "0.1.0",
+  "workingDirectory": ".",
+  "startupScene": "scenes/Main.vfScene",
+  "exeIconPath": "",
+  "engineVersion": "VertexForge 1.0.0",
+  "lastModified": "2026-04-08T08:01:13.605876800Z"
+}
