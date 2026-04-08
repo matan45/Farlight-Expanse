@@ -1,6 +1,6 @@
 import * from "engine/Log.mt";
 import * from "engine/Entity.mt";
-import * from "../../math/Vec3f.mt";
+import * from "../../lib/math/Vec3f.mt";
 
 @Script
 public class CameraOrbitController {

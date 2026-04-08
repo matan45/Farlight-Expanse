@@ -10,7 +10,7 @@ import * from "engine/IUIButtonListener.mt";
 import * from "engine/IUISliderListener.mt";
 import * from "engine/Coroutine.mt";
 import * from "engine/Timer.mt";
-import * from "../../math/Vec3f.mt";
+import * from "../../lib/math/Vec3f.mt";
 
 @Script
 public class MainMenuController implements IUIButtonListener, IUISliderListener {
@@ -189,7 +189,7 @@ public class MainMenuController implements IUIButtonListener, IUISliderListener 
         this.fadeAndLoadGame();
     }
 
-    private async function fadeAndLoadGame(): Promise<void> {
+    private function async fadeAndLoadGame(): Promise<void> {
         // Wait for fade animation to complete
         await Timer.delay(1.5);
         Scene::load("scenes/Game.vfScene");

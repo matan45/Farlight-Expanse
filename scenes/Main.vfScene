@@ -1,647 +1,3888 @@
 {
   "audioSettings": {
     "buses": [
-      { "name": "Master", "parentName": "", "defaultVolume": 1.0 },
-      { "name": "Music", "parentName": "Master", "defaultVolume": 0.7 },
-      { "name": "SFX", "parentName": "Master", "defaultVolume": 1.0 },
-      { "name": "Ambient", "parentName": "Master", "defaultVolume": 0.5 }
+      {
+        "defaultVolume": 1.0,
+        "name": "Master",
+        "parentName": ""
+      },
+      {
+        "defaultVolume": 0.699999988079071,
+        "name": "Music",
+        "parentName": "Master"
+      },
+      {
+        "defaultVolume": 1.0,
+        "name": "SFX",
+        "parentName": "Master"
+      },
+      {
+        "defaultVolume": 0.5,
+        "name": "Ambient",
+        "parentName": "Master"
+      }
     ],
     "distanceFilter": {
-      "defaultIntensity": 1.0, "defaultMaxDistance": 100.0,
-      "defaultStartDistance": 10.0, "enabled": true
+      "defaultIntensity": 1.0,
+      "defaultMaxDistance": 100.0,
+      "defaultStartDistance": 10.0,
+      "enabled": true
     },
-    "distanceModel": { "defaultRolloffFactor": 1.0, "model": "inverseDistanceClamped" },
-    "listener": { "dopplerFactor": 1.0, "masterVolume": 1.0, "speedOfSound": 343.3 },
+    "distanceModel": {
+      "defaultRolloffFactor": 1.0,
+      "model": "inverseDistanceClamped"
+    },
+    "listener": {
+      "dopplerFactor": 1.0,
+      "masterVolume": 1.0,
+      "speedOfSound": 343.29998779296875
+    },
     "mixSnapshots": []
   },
   "physicsSettings": {
     "collisionLayers": [
-      { "builtIn": true, "index": 0, "name": "Static" },
-      { "builtIn": true, "index": 1, "name": "Dynamic" },
-      { "builtIn": true, "index": 2, "name": "Kinematic" },
-      { "builtIn": true, "index": 3, "name": "Sensor" }
+      {
+        "builtIn": true,
+        "index": 0,
+        "name": "Static"
+      },
+      {
+        "builtIn": true,
+        "index": 1,
+        "name": "Dynamic"
+      },
+      {
+        "builtIn": true,
+        "index": 2,
+        "name": "Kinematic"
+      },
+      {
+        "builtIn": true,
+        "index": 3,
+        "name": "Sensor"
+      }
     ],
     "collisionMatrix": [
-      [false, true, true, false],
-      [true, true, true, true],
-      [true, true, false, true],
-      [false, true, true, false]
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ]
     ],
-    "gravity": [0.0, -9.81, 0.0],
+    "gravity": [
+      0.0,
+      -9.8100004196167,
+      0.0
+    ],
     "gravityScale": 1.0,
-    "simulation": { "fixedTimestep": 0.016666666666666666, "maxAccumulator": 0.25, "maxStepsPerFrame": 8 },
-    "sleepThresholds": { "angularVelocity": 0.05, "linearVelocity": 0.05, "timeToSleep": 0.5 },
-    "vfxCollision": { "maxSceneColliders": 32 }
+    "simulation": {
+      "fixedTimestep": 0.016666666666666666,
+      "maxAccumulator": 0.25,
+      "maxStepsPerFrame": 8
+    },
+    "sleepThresholds": {
+      "angularVelocity": 0.05000000074505806,
+      "linearVelocity": 0.05000000074505806,
+      "timeToSleep": 0.5
+    },
+    "vfxCollision": {
+      "maxSceneColliders": 32
+    }
   },
   "renderSettings": {
     "animationLOD": {
-      "lod0Distance": 25.0, "lod0Interval": 1, "lod1Distance": 75.0, "lod1Interval": 2,
-      "lod2Distance": 150.0, "lod2Interval": 6, "lod3Distance": 300.0, "maxStreamingInitPerFrame": 4
+      "lod0Distance": 25.0,
+      "lod0Interval": 1,
+      "lod1Distance": 75.0,
+      "lod1Interval": 2,
+      "lod2Distance": 150.0,
+      "lod2Interval": 6,
+      "lod3Distance": 300.0,
+      "maxStreamingInitPerFrame": 4
     },
     "atmosphere": {
-      "aerialIntensity": 1.0, "aerialMaxDist": 100000.0, "atmosphereRadius": 6460000.0,
-      "cycleSpeed": 0.02, "dayNightEnabled": true, "enabled": true,
-      "groundAlbedo": [0.1, 0.1, 0.15],
-      "mieAbsorption": 4.4e-06, "mieAnisotropy": 0.8, "mieDensityExpScale": -0.0008333333,
-      "mieScattering": 3.996e-06, "moonAngularRadius": 0.009, "moonAzimuth": 180.0,
-      "moonBrightness": 0.03, "moonElevation": -45.0, "moonPhaseOffset": 0.0,
-      "nightSkyBrightness": 0.003,
-      "ozoneAbsorption": [6.5e-07, 1.881e-06, 8.5e-08],
-      "ozoneCenterAlt": 25000.0, "ozoneWidth": 15000.0, "planetRadius": 6360000.0,
-      "rayleighDensityExpScale": -0.000125,
-      "rayleighScattering": [5.802e-06, 1.3558e-05, 3.31e-05],
-      "starBrightness": 2.0, "starDensity": 0.008, "starTwinkleSpeed": 1.0,
-      "sunAngularRadius": 0.00935, "sunAzimuth": 30.0, "sunElevation": -5.0,
-      "sunIrradiance": [1.474, 1.8504, 1.91198], "timeOfDay": 5.5
+      "aerialIntensity": 1.0,
+      "aerialMaxDist": 100000.0,
+      "atmosphereRadius": 6460000.0,
+      "cycleSpeed": 0.019999999552965164,
+      "dayNightEnabled": true,
+      "enabled": true,
+      "groundAlbedo": [
+        0.10000000149011612,
+        0.10000000149011612,
+        0.15000000596046448
+      ],
+      "mieAbsorption": 4.399999852466863e-06,
+      "mieAnisotropy": 0.800000011920929,
+      "mieDensityExpScale": -0.0008333332953043282,
+      "mieScattering": 3.9960000322025735e-06,
+      "moonAngularRadius": 0.008999999612569809,
+      "moonAzimuth": 180.0,
+      "moonBrightness": 0.029999999329447746,
+      "moonElevation": -45.0,
+      "moonPhaseOffset": 0.0,
+      "nightSkyBrightness": 0.003000000026077032,
+      "ozoneAbsorption": [
+        6.500000040432496e-07,
+        1.8810000028679497e-06,
+        8.500000348021786e-08
+      ],
+      "ozoneCenterAlt": 25000.0,
+      "ozoneWidth": 15000.0,
+      "planetRadius": 6360000.0,
+      "rayleighDensityExpScale": -0.0001250000059371814,
+      "rayleighScattering": [
+        5.802000032417709e-06,
+        1.3558000318880659e-05,
+        3.310000101919286e-05
+      ],
+      "starBrightness": 2.0,
+      "starDensity": 0.00800000037997961,
+      "starTwinkleSpeed": 1.0,
+      "sunAngularRadius": 0.009349999949336052,
+      "sunAzimuth": 30.0,
+      "sunElevation": -5.0,
+      "sunIrradiance": [
+        1.4739999771118164,
+        1.8503999710083008,
+        1.9119800329208374
+      ],
+      "timeOfDay": 5.5
     },
-    "cloud": { "enabled": false },
+    "cloud": {
+      "ambientIntensity": 0.44999998807907104,
+      "cloudColorTint": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cloudMaxAltitude": 4000.0,
+      "cloudMinAltitude": 1500.0,
+      "cloudType": 0.699999988079071,
+      "curlStrength": 0.30000001192092896,
+      "detailScale": 0.003000000026077032,
+      "enabled": false,
+      "erosionStrength": 0.44999998807907104,
+      "globalCoverage": 0.44999998807907104,
+      "globalDensity": 0.5,
+      "lightAbsorption": 0.75,
+      "lightMarchSteps": 6,
+      "maxMarchSteps": 96,
+      "multiScatterBoost": 0.30000001192092896,
+      "phaseBackward": -0.30000001192092896,
+      "phaseBlend": 0.5,
+      "phaseForward": 0.800000011920929,
+      "shapeScale": 0.0003000000142492354,
+      "silverLiningIntensity": 0.5,
+      "silverLiningSpread": 5.0,
+      "temporalBlendFactor": 0.800000011920929,
+      "windDirectionDeg": 45.0,
+      "windSpeed": 25.0
+    },
     "culling": {
-      "frustumCullingEnabled": true, "globalLodBias": 0.0, "lodCrossfadeEnabled": true,
-      "lodSelectionEnabled": true, "meshletBackfaceCullingEnabled": true,
-      "meshletFrustumCullingEnabled": true, "meshletOcclusionCullingEnabled": true,
-      "occlusionCullingEnabled": true, "terrainFrustumCullingEnabled": true,
+      "frustumCullingEnabled": true,
+      "globalLodBias": 0.0,
+      "lodCrossfadeEnabled": true,
+      "lodSelectionEnabled": true,
+      "meshletBackfaceCullingEnabled": true,
+      "meshletFrustumCullingEnabled": true,
+      "meshletOcclusionCullingEnabled": true,
+      "occlusionCullingEnabled": true,
+      "terrainFrustumCullingEnabled": true,
       "terrainMeshletCullingEnabled": true
     },
-    "distanceCulling": { "enabled": false },
-    "gi": { "enabled": false },
+    "distanceCulling": {
+      "billboardDistance": 1000.0,
+      "decalDistance": 200.0,
+      "enabled": false,
+      "foliageDistance": 500.0,
+      "shadowDistanceMultiplier": 0.5,
+      "staticMeshDistance": 1000.0,
+      "terrainDistance": 2000.0,
+      "vfxDistance": 300.0,
+      "waterDistance": 2000.0
+    },
+    "gi": {
+      "cascadeMultiplier": 2.0,
+      "enabled": false,
+      "farFieldCascadeCount": 2,
+      "farFieldEnabled": false,
+      "farFieldMaxDistance": 500.0,
+      "farFieldProbeSpacing": 32.0,
+      "farFieldRaysPerUpdate": 32,
+      "farFieldUpdateRate": 0.10000000149011612,
+      "maxProbeDistance": 200.0,
+      "probeRaysPerUpdate": 64,
+      "probeSpacing": 2.0,
+      "probeUpdateRate": 0.25,
+      "quality": 0,
+      "ssgiEnabled": false,
+      "ssgiHalfResolution": true,
+      "ssgiIntensity": 0.5,
+      "ssgiMaxDistance": 100.0,
+      "ssgiRadius": 2.0,
+      "ssgiSampleCount": 8,
+      "ssgiTemporalBlend": 0.10000000149011612,
+      "temporalBlendFactor": 0.949999988079071
+    },
     "postProcess": {
-      "enabled": true,
       "autoExposure": {
-        "enabled": true, "adaptSpeedDown": 1.0, "adaptSpeedUp": 3.0,
-        "exposureCompensation": 0.0, "highPercentile": 0.9, "lowPercentile": 0.1,
-        "maxExposure": 10.0, "minExposure": 0.1
+        "adaptSpeedDown": 1.0,
+        "adaptSpeedUp": 3.0,
+        "enabled": true,
+        "exposureCompensation": 0.0,
+        "highPercentile": 0.8999999761581421,
+        "lowPercentile": 0.10000000149011612,
+        "maxExposure": 10.0,
+        "minExposure": 0.10000000149011612
       },
-      "bloom": { "enabled": true, "intensity": 0.3, "passes": 5, "radius": 0.5, "threshold": 0.8 },
-      "chromaticAberration": { "enabled": false, "intensity": 0.005 },
+      "bloom": {
+        "enabled": false,
+        "intensity": 0.30000001192092896,
+        "passes": 5,
+        "radius": 0.5,
+        "threshold": 0.800000011920929
+      },
+      "chromaticAberration": {
+        "enabled": false,
+        "intensity": 0.004999999888241291
+      },
       "colorGrading": {
-        "enabled": true, "colorTemperature": 6500.0, "colorTint": 0.0,
-        "gainB": 1.0, "gainG": 1.0, "gainR": 1.0,
-        "gammaB": 1.0, "gammaG": 1.0, "gammaR": 1.0,
-        "liftB": 0.0, "liftG": 0.0, "liftR": 0.0,
-        "lutBlendFactor": 0.0, "lutIntensity": 1.0,
-        "primaryLutPath": "", "saturation": 1.1, "secondaryLutPath": ""
+        "colorTemperature": 6500.0,
+        "colorTint": 0.0,
+        "enabled": false,
+        "gainB": 1.0,
+        "gainG": 1.0,
+        "gainR": 1.0,
+        "gammaB": 1.0,
+        "gammaG": 1.0,
+        "gammaR": 1.0,
+        "liftB": 0.0,
+        "liftG": 0.0,
+        "liftR": 0.0,
+        "lutBlendFactor": 0.0,
+        "lutIntensity": 1.0,
+        "primaryLutPath": "",
+        "saturation": 1.100000023841858,
+        "secondaryLutPath": ""
       },
-      "depthOfField": { "enabled": false },
-      "edgeDetection": { "enabled": false },
-      "filmGrain": { "enabled": false, "intensity": 0.1, "size": 1.6 },
-      "ssao": { "enabled": false },
-      "toneMapping": { "enabled": true, "contrast": 1.0, "exposure": 1.0, "gamma": 2.2, "mode": "aces" },
-      "underwater": { "enabled": false },
-      "vignette": { "enabled": true, "intensity": 0.25, "radius": 0.85, "softness": 0.5 },
-      "volumetricFog": { "enabled": false }
+      "depthOfField": {
+        "enabled": false,
+        "focalDistance": 10.0,
+        "focalRange": 5.0,
+        "focusMode": 0,
+        "focusSmoothing": 5.0,
+        "focusTargetX": 0.0,
+        "focusTargetY": 0.0,
+        "focusTargetZ": 0.0,
+        "maxBlurRadius": 5.0,
+        "sampleCount": 32
+      },
+      "edgeDetection": {
+        "edgeColor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "edgeWidth": 1.0,
+        "enabled": false,
+        "opacity": 1.0,
+        "threshold": 0.10000000149011612
+      },
+      "enabled": false,
+      "filmGrain": {
+        "enabled": false,
+        "intensity": 0.10000000149011612,
+        "size": 1.600000023841858
+      },
+      "ssao": {
+        "bias": 0.02500000037252903,
+        "enabled": false,
+        "intensity": 1.0,
+        "kernelSize": 32,
+        "power": 2.0,
+        "quality": 1,
+        "radius": 0.5
+      },
+      "toneMapping": {
+        "contrast": 1.0,
+        "enabled": false,
+        "exposure": 1.0,
+        "gamma": 2.200000047683716,
+        "mode": "aces",
+        "shoulder": 0.0,
+        "toe": 0.0
+      },
+      "underwater": {
+        "absorptionB": 0.019999999552965164,
+        "absorptionG": 0.07999999821186066,
+        "absorptionR": 0.44999998807907104,
+        "causticScale": 50.0,
+        "causticSpeed": 0.30000001192092896,
+        "causticStrength": 0.5,
+        "chromaticStrength": 0.003000000026077032,
+        "enabled": false,
+        "fogColor": [
+          0.0,
+          0.15000000596046448,
+          0.30000001192092896
+        ],
+        "fogDensity": 0.15000000596046448,
+        "maxFogDistance": 100.0,
+        "meniscusDistortion": 0.029999999329447746,
+        "meniscusWidth": 0.019999999552965164
+      },
+      "vignette": {
+        "enabled": false,
+        "intensity": 0.25,
+        "radius": 0.8500000238418579,
+        "softness": 0.5
+      },
+      "volumetricFog": {
+        "absorptionCoefficient": 0.10000000149011612,
+        "ambientIntensity": 0.15000000596046448,
+        "anisotropy": 0.699999988079071,
+        "enabled": false,
+        "fogColor": [
+          0.800000011920929,
+          0.8500000238418579,
+          0.8999999761581421
+        ],
+        "giInjectionIntensity": 1.0,
+        "heightFogDensity": 0.05000000074505806,
+        "heightFogFalloff": 0.10000000149011612,
+        "heightFogOffset": 0.0,
+        "intensity": 1.0,
+        "maxDistance": 500.0,
+        "noiseEnabled": false,
+        "noiseIntensity": 0.5,
+        "noiseOctaves": 3,
+        "noiseScale": 0.009999999776482582,
+        "noiseSpeed": 0.05000000074505806,
+        "quality": "medium",
+        "scatteringCoefficient": 0.5,
+        "temporalBlendFactor": 0.8999999761581421,
+        "uniformDensity": 0.019999999552965164
+      }
     },
-    "rtShadows": { "enabled": false },
+    "rtShadows": {
+      "depthThreshold": 0.009999999776482582,
+      "enabled": false,
+      "maxRayDistance": 500.0,
+      "normalBias": 0.05000000074505806,
+      "normalThreshold": 0.8999999761581421,
+      "rayTMin": 0.009999999776482582,
+      "spatialPasses": 3,
+      "spatialPhiDepth": 0.004999999888241291,
+      "spatialPhiNormal": 32.0,
+      "temporalBlend": 0.8999999761581421
+    },
     "shadows": {
-      "enabled": true, "normalBias": 0.02, "pointResolution": 512, "quality": "high",
-      "shadowBias": 0.005, "shadowIntensity": 0.5, "slopeBias": 1.5,
-      "softShadows": true, "spotResolution": 1024
+      "enabled": true,
+      "normalBias": 0.019999999552965164,
+      "pointResolution": 512,
+      "quality": "high",
+      "shadowBias": 0.004999999888241291,
+      "shadowIntensity": 0.5,
+      "slopeBias": 1.5,
+      "softShadows": true,
+      "spotResolution": 1024
     },
-    "terrain": { "enabled": false },
-    "transparency": { "wboitEnabled": true },
-    "vfxLOD": { "lod0Distance": 50.0, "lod1Distance": 100.0, "lod2Distance": 200.0, "transitionZone": 10.0 }
+    "terrain": {
+      "enabled": false,
+      "errorThreshold": 2.0,
+      "lodBias": 1.0,
+      "textureScale": 0.10000000149011612
+    },
+    "transparency": {
+      "wboitEnabled": true
+    },
+    "vfxLOD": {
+      "lod0Distance": 50.0,
+      "lod1Distance": 100.0,
+      "lod2Distance": 200.0,
+      "transitionZone": 10.0
+    }
   },
   "root": {
-    "uuid": 12897697530608323519,
-    "name": "Root",
-    "isActive": true,
-    "transform": {
-      "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": true
-    },
-    "components": {},
     "children": [
       {
-        "uuid": 1000000000000000001,
-        "name": "MenuCamera",
-        "isActive": true,
-        "transform": {
-          "position": [50.0, 15.0, 0.0], "rotation": [-10.0, 90.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false
-        },
+        "children": [],
         "components": {
+          "billboard": {
+            "atlasIndex": 0,
+            "colorTint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "editorOnly": true,
+            "iconType": "camera",
+            "selectable": true,
+            "size": [
+              64.0,
+              64.0
+            ],
+            "sizeMode": "screenSpace"
+          },
           "camera": {
-            "cameraId": 0, "fieldOfView": 60.0, "nearPlane": 0.1, "farPlane": 10000.0,
-            "aspectRatio": 1.7777, "isPerspective": true, "isPrimary": true,
-            "showFrustum": false, "orthoSize": 5.0
+            "aspectRatio": 1.7776999473571777,
+            "cameraId": 0,
+            "farPlane": 10000.0,
+            "fieldOfView": 60.0,
+            "isPerspective": true,
+            "isPrimary": true,
+            "nearPlane": 0.10000000149011612,
+            "orthoSize": 5.0,
+            "showFrustum": false
           },
           "script": {
             "scripts": [
-              { "scriptRef": { "guid": "", "refPath": "scripts/game/menu/CameraOrbitController.mt" }, "enabled": true }
+              {
+                "enabled": true,
+                "scriptRef": "0000000000000000"
+              }
             ]
           }
         },
-        "children": []
+        "isActive": true,
+        "name": "MenuCamera",
+        "transform": {
+          "isStatic": false,
+          "position": [
+            50.0,
+            15.0,
+            0.0
+          ],
+          "rotation": [
+            -10.0,
+            90.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "uuid": 1000000000000000001
       },
       {
-        "uuid": 1000000000000000002,
+        "children": [],
+        "components": {
+          "audioSource2D": {
+            "audioRef": "0000000000000000",
+            "busName": "Music",
+            "loop": true,
+            "pitch": 1.0,
+            "volume": 0.699999988079071
+          },
+          "billboard": {
+            "atlasIndex": 0,
+            "colorTint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "editorOnly": true,
+            "iconType": "audio2D",
+            "selectable": true,
+            "size": [
+              64.0,
+              64.0
+            ],
+            "sizeMode": "screenSpace"
+          }
+        },
+        "isActive": true,
         "name": "MenuMusic",
-        "isActive": true,
-        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-        "components": {
-          "audioSource2D": { "audioRef": { "guid": "", "refPath": "" }, "volume": 0.7, "pitch": 1.0, "loop": true, "busName": "Music" }
+        "transform": {
+          "isStatic": false,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
         },
-        "children": []
+        "uuid": 1000000000000000002
       },
       {
-        "uuid": 1000000000000000003,
+        "children": [],
+        "components": {
+          "audioSource2D": {
+            "audioRef": "0000000000000000",
+            "busName": "SFX",
+            "loop": false,
+            "pitch": 1.0,
+            "volume": 1.0
+          },
+          "billboard": {
+            "atlasIndex": 0,
+            "colorTint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "editorOnly": true,
+            "iconType": "audio2D",
+            "selectable": true,
+            "size": [
+              64.0,
+              64.0
+            ],
+            "sizeMode": "screenSpace"
+          }
+        },
+        "isActive": true,
         "name": "ButtonClickSFX",
-        "isActive": true,
-        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-        "components": {
-          "audioSource2D": { "audioRef": { "guid": "", "refPath": "" }, "volume": 1.0, "pitch": 1.0, "loop": false, "busName": "SFX" }
+        "transform": {
+          "isStatic": false,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
         },
-        "children": []
+        "uuid": 1000000000000000003
       },
       {
-        "uuid": 1000000000000000010,
-        "name": "UICanvas",
-        "isActive": true,
-        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-        "components": {
-          "uiCanvas": { "referenceWidth": 1920.0, "referenceHeight": 1080.0, "scaleMode": "scaleWithScreenSize", "pixelsPerUnit": 100.0 }
-        },
         "children": [
           {
-            "uuid": 1000000000000000100,
-            "name": "MainPanel",
-            "isActive": true,
-            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-            "components": {
-              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-              "uiImage": { "colorTint": [0.0, 0.0, 0.0, 0.4] }
-            },
             "children": [
               {
-                "uuid": 1000000000000000101,
+                "children": [],
+                "components": {
+                  "uiLabel": {
+                    "color": [
+                      0.8999999761581421,
+                      0.9200000166893005,
+                      1.0,
+                      1.0
+                    ],
+                    "fontSize": 64.0,
+                    "fontStyle": "bold",
+                    "horizontalAlignment": "center",
+                    "letterSpacing": 8.0,
+                    "lineSpacing": 1.0,
+                    "overflow": "overflow",
+                    "text": "FARLIGHT EXPANSE",
+                    "verticalAlignment": "middle",
+                    "wordWrap": false
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      0.5,
+                      0.75
+                    ],
+                    "anchorMin": [
+                      0.5,
+                      0.75
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      50.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      800.0,
+                      120.0
+                    ]
+                  }
+                },
+                "isActive": true,
                 "name": "TitleLabel",
-                "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                "components": {
-                  "uiRect": { "anchorMin": [0.5, 0.75], "anchorMax": [0.5, 0.75], "pivot": [0.5, 0.5], "sizeDelta": [800.0, 120.0], "anchoredPosition": [0.0, 50.0] },
-                  "uiLabel": {
-                    "text": "FARLIGHT EXPANSE", "fontSize": 64.0, "fontStyle": "bold",
-                    "color": [0.9, 0.92, 1.0, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle",
-                    "overflow": "overflow", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 8.0
-                  }
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
                 },
-                "children": []
+                "uuid": 1000000000000000101
               },
               {
-                "uuid": 1000000000000000102,
+                "children": [],
+                "components": {
+                  "uiLabel": {
+                    "color": [
+                      0.6000000238418579,
+                      0.6499999761581421,
+                      0.800000011920929,
+                      0.800000011920929
+                    ],
+                    "fontSize": 18.0,
+                    "fontStyle": "normal",
+                    "horizontalAlignment": "center",
+                    "letterSpacing": 4.0,
+                    "lineSpacing": 1.0,
+                    "overflow": "overflow",
+                    "text": "EXPLORE THE UNKNOWN",
+                    "verticalAlignment": "middle",
+                    "wordWrap": false
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      0.5,
+                      0.75
+                    ],
+                    "anchorMin": [
+                      0.5,
+                      0.75
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      -20.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      600.0,
+                      40.0
+                    ]
+                  }
+                },
+                "isActive": true,
                 "name": "SubtitleLabel",
-                "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                "components": {
-                  "uiRect": { "anchorMin": [0.5, 0.75], "anchorMax": [0.5, 0.75], "pivot": [0.5, 0.5], "sizeDelta": [600.0, 40.0], "anchoredPosition": [0.0, -20.0] },
-                  "uiLabel": {
-                    "text": "EXPLORE THE UNKNOWN", "fontSize": 18.0, "fontStyle": "normal",
-                    "color": [0.6, 0.65, 0.8, 0.8], "horizontalAlignment": "center", "verticalAlignment": "middle",
-                    "overflow": "overflow", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 4.0
-                  }
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
                 },
-                "children": []
+                "uuid": 1000000000000000102
               },
               {
-                "uuid": 1000000000000000110,
-                "name": "ButtonsLayout",
-                "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                "components": {
-                  "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [320.0, 340.0], "anchoredPosition": [0.0, -40.0] },
-                  "uiLayoutGroup": { "direction": "vertical", "spacing": 12.0, "padding": [0.0, 0.0, 0.0, 0.0], "childAlignment": "center", "constraintCount": 1 }
-                },
                 "children": [
                   {
-                    "uuid": 1000000000000000111, "name": "NewGameBtn", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [300.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                      "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.25, 0.35, 0.55, 0.95], "pressedColor": [0.1, 0.15, 0.25, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": true }
-                    },
                     "children": [
                       {
-                        "uuid": 1000000000000001111, "name": "NewGameBtnLabel", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                        "children": [],
                         "components": {
-                          "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "NEW GAME", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                          "uiLabel": {
+                            "color": [
+                              0.8500000238418579,
+                              0.8799999952316284,
+                              0.949999988079071,
+                              1.0
+                            ],
+                            "fontSize": 22.0,
+                            "fontStyle": "bold",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 2.0,
+                            "lineSpacing": 1.0,
+                            "overflow": "clip",
+                            "text": "NEW GAME",
+                            "verticalAlignment": "middle",
+                            "wordWrap": false
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              1.0,
+                              1.0
+                            ],
+                            "anchorMin": [
+                              0.0,
+                              0.0
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
                         },
-                        "children": []
+                        "isActive": true,
+                        "name": "NewGameBtnLabel",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000001111
                       }
-                    ]
+                    ],
+                    "components": {
+                      "uiButton": {
+                        "colorTransitionDuration": 0.15000000596046448,
+                        "disabledColor": [
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.4000000059604645
+                        ],
+                        "hoveredColor": [
+                          0.25,
+                          0.3499999940395355,
+                          0.550000011920929,
+                          0.949999988079071
+                        ],
+                        "interactable": true,
+                        "normalColor": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ],
+                        "pressedColor": [
+                          0.10000000149011612,
+                          0.15000000596046448,
+                          0.25,
+                          1.0
+                        ]
+                      },
+                      "uiImage": {
+                        "colorTint": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ]
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchorMin": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          300.0,
+                          50.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "NewGameBtn",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000111
                   },
                   {
-                    "uuid": 1000000000000000112, "name": "ContinueBtn", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [300.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                      "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.25, 0.35, 0.55, 0.95], "pressedColor": [0.1, 0.15, 0.25, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": false }
-                    },
                     "children": [
                       {
-                        "uuid": 1000000000000001121, "name": "ContinueBtnLabel", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                        "children": [],
                         "components": {
-                          "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "CONTINUE", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                          "uiLabel": {
+                            "color": [
+                              0.8500000238418579,
+                              0.8799999952316284,
+                              0.949999988079071,
+                              1.0
+                            ],
+                            "fontSize": 22.0,
+                            "fontStyle": "bold",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 2.0,
+                            "lineSpacing": 1.0,
+                            "overflow": "clip",
+                            "text": "CONTINUE",
+                            "verticalAlignment": "middle",
+                            "wordWrap": false
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              1.0,
+                              1.0
+                            ],
+                            "anchorMin": [
+                              0.0,
+                              0.0
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
                         },
-                        "children": []
+                        "isActive": true,
+                        "name": "ContinueBtnLabel",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000001121
                       }
-                    ]
+                    ],
+                    "components": {
+                      "uiButton": {
+                        "colorTransitionDuration": 0.15000000596046448,
+                        "disabledColor": [
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.4000000059604645
+                        ],
+                        "hoveredColor": [
+                          0.25,
+                          0.3499999940395355,
+                          0.550000011920929,
+                          0.949999988079071
+                        ],
+                        "interactable": false,
+                        "normalColor": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ],
+                        "pressedColor": [
+                          0.10000000149011612,
+                          0.15000000596046448,
+                          0.25,
+                          1.0
+                        ]
+                      },
+                      "uiImage": {
+                        "colorTint": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ]
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchorMin": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          300.0,
+                          50.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "ContinueBtn",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000112
                   },
                   {
-                    "uuid": 1000000000000000113, "name": "LoadGameBtn", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [300.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                      "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.25, 0.35, 0.55, 0.95], "pressedColor": [0.1, 0.15, 0.25, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": false }
-                    },
                     "children": [
                       {
-                        "uuid": 1000000000000001131, "name": "LoadGameBtnLabel", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                        "children": [],
                         "components": {
-                          "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "LOAD GAME", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                          "uiLabel": {
+                            "color": [
+                              0.8500000238418579,
+                              0.8799999952316284,
+                              0.949999988079071,
+                              1.0
+                            ],
+                            "fontSize": 22.0,
+                            "fontStyle": "bold",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 2.0,
+                            "lineSpacing": 1.0,
+                            "overflow": "clip",
+                            "text": "LOAD GAME",
+                            "verticalAlignment": "middle",
+                            "wordWrap": false
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              1.0,
+                              1.0
+                            ],
+                            "anchorMin": [
+                              0.0,
+                              0.0
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
                         },
-                        "children": []
+                        "isActive": true,
+                        "name": "LoadGameBtnLabel",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000001131
                       }
-                    ]
+                    ],
+                    "components": {
+                      "uiButton": {
+                        "colorTransitionDuration": 0.15000000596046448,
+                        "disabledColor": [
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.4000000059604645
+                        ],
+                        "hoveredColor": [
+                          0.25,
+                          0.3499999940395355,
+                          0.550000011920929,
+                          0.949999988079071
+                        ],
+                        "interactable": false,
+                        "normalColor": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ],
+                        "pressedColor": [
+                          0.10000000149011612,
+                          0.15000000596046448,
+                          0.25,
+                          1.0
+                        ]
+                      },
+                      "uiImage": {
+                        "colorTint": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ]
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchorMin": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          300.0,
+                          50.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "LoadGameBtn",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000113
                   },
                   {
-                    "uuid": 1000000000000000114, "name": "SettingsBtn", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [300.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                      "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.25, 0.35, 0.55, 0.95], "pressedColor": [0.1, 0.15, 0.25, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": true }
-                    },
                     "children": [
                       {
-                        "uuid": 1000000000000001141, "name": "SettingsBtnLabel", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                        "children": [],
                         "components": {
-                          "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "SETTINGS", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                          "uiLabel": {
+                            "color": [
+                              0.8500000238418579,
+                              0.8799999952316284,
+                              0.949999988079071,
+                              1.0
+                            ],
+                            "fontSize": 22.0,
+                            "fontStyle": "bold",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 2.0,
+                            "lineSpacing": 1.0,
+                            "overflow": "clip",
+                            "text": "SETTINGS",
+                            "verticalAlignment": "middle",
+                            "wordWrap": false
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              1.0,
+                              1.0
+                            ],
+                            "anchorMin": [
+                              0.0,
+                              0.0
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
                         },
-                        "children": []
+                        "isActive": true,
+                        "name": "SettingsBtnLabel",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000001141
                       }
-                    ]
+                    ],
+                    "components": {
+                      "uiButton": {
+                        "colorTransitionDuration": 0.15000000596046448,
+                        "disabledColor": [
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.4000000059604645
+                        ],
+                        "hoveredColor": [
+                          0.25,
+                          0.3499999940395355,
+                          0.550000011920929,
+                          0.949999988079071
+                        ],
+                        "interactable": true,
+                        "normalColor": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ],
+                        "pressedColor": [
+                          0.10000000149011612,
+                          0.15000000596046448,
+                          0.25,
+                          1.0
+                        ]
+                      },
+                      "uiImage": {
+                        "colorTint": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ]
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchorMin": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          300.0,
+                          50.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "SettingsBtn",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000114
                   },
                   {
-                    "uuid": 1000000000000000115, "name": "ExitBtn", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [300.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                      "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.4, 0.2, 0.2, 0.95], "pressedColor": [0.3, 0.1, 0.1, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": true }
-                    },
                     "children": [
                       {
-                        "uuid": 1000000000000001151, "name": "ExitBtnLabel", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                        "children": [],
                         "components": {
-                          "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "EXIT", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                          "uiLabel": {
+                            "color": [
+                              0.8500000238418579,
+                              0.8799999952316284,
+                              0.949999988079071,
+                              1.0
+                            ],
+                            "fontSize": 22.0,
+                            "fontStyle": "bold",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 2.0,
+                            "lineSpacing": 1.0,
+                            "overflow": "clip",
+                            "text": "EXIT",
+                            "verticalAlignment": "middle",
+                            "wordWrap": false
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              1.0,
+                              1.0
+                            ],
+                            "anchorMin": [
+                              0.0,
+                              0.0
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
                         },
-                        "children": []
+                        "isActive": true,
+                        "name": "ExitBtnLabel",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000001151
                       }
+                    ],
+                    "components": {
+                      "uiButton": {
+                        "colorTransitionDuration": 0.15000000596046448,
+                        "disabledColor": [
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.15000000596046448,
+                          0.4000000059604645
+                        ],
+                        "hoveredColor": [
+                          0.4000000059604645,
+                          0.20000000298023224,
+                          0.20000000298023224,
+                          0.949999988079071
+                        ],
+                        "interactable": true,
+                        "normalColor": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ],
+                        "pressedColor": [
+                          0.30000001192092896,
+                          0.10000000149011612,
+                          0.10000000149011612,
+                          1.0
+                        ]
+                      },
+                      "uiImage": {
+                        "colorTint": [
+                          0.15000000596046448,
+                          0.18000000715255737,
+                          0.25,
+                          0.8500000238418579
+                        ]
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchorMin": [
+                          0.5,
+                          0.5
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          300.0,
+                          50.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "ExitBtn",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000115
+                  }
+                ],
+                "components": {
+                  "uiLayoutGroup": {
+                    "childAlignment": "center",
+                    "constraintCount": 1,
+                    "direction": "vertical",
+                    "padding": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    "spacing": 12.0
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      0.5,
+                      0.5
+                    ],
+                    "anchorMin": [
+                      0.5,
+                      0.5
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      -40.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      320.0,
+                      340.0
                     ]
                   }
-                ]
+                },
+                "isActive": true,
+                "name": "ButtonsLayout",
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "uuid": 1000000000000000110
               },
               {
-                "uuid": 1000000000000000120, "name": "VersionLabel", "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                "children": [],
                 "components": {
-                  "uiRect": { "anchorMin": [1.0, 0.0], "anchorMax": [1.0, 0.0], "pivot": [1.0, 0.0], "sizeDelta": [200.0, 30.0], "anchoredPosition": [-20.0, 15.0] },
-                  "uiLabel": { "text": "v0.1.0", "fontSize": 14.0, "fontStyle": "normal", "color": [0.5, 0.5, 0.6, 0.6], "horizontalAlignment": "right", "verticalAlignment": "bottom", "overflow": "overflow", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 0.0 }
+                  "uiLabel": {
+                    "color": [
+                      0.5,
+                      0.5,
+                      0.6000000238418579,
+                      0.6000000238418579
+                    ],
+                    "fontSize": 14.0,
+                    "fontStyle": "normal",
+                    "horizontalAlignment": "right",
+                    "letterSpacing": 0.0,
+                    "lineSpacing": 1.0,
+                    "overflow": "overflow",
+                    "text": "v0.1.0",
+                    "verticalAlignment": "bottom",
+                    "wordWrap": false
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      1.0,
+                      0.0
+                    ],
+                    "anchorMin": [
+                      1.0,
+                      0.0
+                    ],
+                    "anchoredPosition": [
+                      -20.0,
+                      15.0
+                    ],
+                    "pivot": [
+                      1.0,
+                      0.0
+                    ],
+                    "sizeDelta": [
+                      200.0,
+                      30.0
+                    ]
+                  }
                 },
-                "children": []
+                "isActive": true,
+                "name": "VersionLabel",
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "uuid": 1000000000000000120
               }
-            ]
+            ],
+            "components": {
+              "uiImage": {
+                "colorTint": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.4000000059604645
+                ]
+              },
+              "uiRect": {
+                "anchorMax": [
+                  1.0,
+                  1.0
+                ],
+                "anchorMin": [
+                  0.0,
+                  0.0
+                ],
+                "anchoredPosition": [
+                  0.0,
+                  0.0
+                ],
+                "pivot": [
+                  0.5,
+                  0.5
+                ],
+                "sizeDelta": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "isActive": true,
+            "name": "MainPanel",
+            "transform": {
+              "isStatic": false,
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "uuid": 1000000000000000100
           },
           {
-            "uuid": 1000000000000000200,
-            "name": "SettingsPanel",
-            "isActive": false,
-            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-            "components": {
-              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-              "uiImage": { "colorTint": [0.05, 0.05, 0.1, 0.85] }
-            },
             "children": [
               {
-                "uuid": 1000000000000000201, "name": "SettingsTitle", "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                "children": [],
                 "components": {
-                  "uiRect": { "anchorMin": [0.5, 0.92], "anchorMax": [0.5, 0.92], "pivot": [0.5, 0.5], "sizeDelta": [400.0, 60.0], "anchoredPosition": [0.0, 0.0] },
-                  "uiLabel": { "text": "SETTINGS", "fontSize": 42.0, "fontStyle": "bold", "color": [0.9, 0.92, 1.0, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "overflow", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 6.0 }
+                  "uiLabel": {
+                    "color": [
+                      0.8999999761581421,
+                      0.9200000166893005,
+                      1.0,
+                      1.0
+                    ],
+                    "fontSize": 42.0,
+                    "fontStyle": "bold",
+                    "horizontalAlignment": "center",
+                    "letterSpacing": 6.0,
+                    "lineSpacing": 1.0,
+                    "overflow": "overflow",
+                    "text": "SETTINGS",
+                    "verticalAlignment": "middle",
+                    "wordWrap": false
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      0.5,
+                      0.9200000166893005
+                    ],
+                    "anchorMin": [
+                      0.5,
+                      0.9200000166893005
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      0.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      400.0,
+                      60.0
+                    ]
+                  }
                 },
-                "children": []
-              },
-              {
-                "uuid": 1000000000000000250,
-                "name": "SettingsTabs",
                 "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                "components": {
-                  "uiRect": { "anchorMin": [0.15, 0.12], "anchorMax": [0.85, 0.85], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                  "uiTabs": { "tabBarPosition": "Top", "activeTabIndex": 0 }
+                "name": "SettingsTitle",
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
                 },
-                "children": [
-                  {
-                    "uuid": 1000000000000000251,
-                    "name": "TabBar",
-                    "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.0, 0.9], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiLayoutGroup": { "direction": "horizontal", "spacing": 4.0, "padding": [0.0, 0.0, 0.0, 0.0], "childAlignment": "center", "constraintCount": 3 }
-                    },
-                    "children": [
-                      {
-                        "uuid": 1000000000000002510, "name": "AudioTabBtn", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [180.0, 45.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiImage": { "colorTint": [0.2, 0.22, 0.3, 0.9] },
-                          "uiButton": { "normalColor": [0.2, 0.22, 0.3, 0.9], "hoveredColor": [0.3, 0.35, 0.5, 1.0], "pressedColor": [0.15, 0.18, 0.28, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.1, "interactable": true }
-                        },
-                        "children": [
-                          {
-                            "uuid": 1000000000000025101, "name": "AudioTabBtnLabel", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": {
-                              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                              "uiLabel": { "text": "AUDIO", "fontSize": 18.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
-                            },
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "uuid": 1000000000000002511, "name": "GraphicsTabBtn", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [180.0, 45.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiImage": { "colorTint": [0.2, 0.22, 0.3, 0.9] },
-                          "uiButton": { "normalColor": [0.2, 0.22, 0.3, 0.9], "hoveredColor": [0.3, 0.35, 0.5, 1.0], "pressedColor": [0.15, 0.18, 0.28, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.1, "interactable": true }
-                        },
-                        "children": [
-                          {
-                            "uuid": 1000000000000025111, "name": "GraphicsTabBtnLabel", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": {
-                              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                              "uiLabel": { "text": "GRAPHICS", "fontSize": 18.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
-                            },
-                            "children": []
-                          }
-                        ]
-                      },
-                      {
-                        "uuid": 1000000000000002512, "name": "ControlsTabBtn", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [180.0, 45.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiImage": { "colorTint": [0.2, 0.22, 0.3, 0.9] },
-                          "uiButton": { "normalColor": [0.2, 0.22, 0.3, 0.9], "hoveredColor": [0.3, 0.35, 0.5, 1.0], "pressedColor": [0.15, 0.18, 0.28, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.1, "interactable": true }
-                        },
-                        "children": [
-                          {
-                            "uuid": 1000000000000025121, "name": "ControlsTabBtnLabel", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": {
-                              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                              "uiLabel": { "text": "CONTROLS", "fontSize": 18.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
-                            },
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "uuid": 1000000000000000260,
-                    "name": "AudioPanel",
-                    "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 0.88], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] }
-                    },
-                    "children": [
-                      {
-                        "uuid": 1000000000000000261,
-                        "name": "AudioSlidersLayout",
-                        "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.1, 0.15], "anchorMax": [0.9, 0.9], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLayoutGroup": { "direction": "vertical", "spacing": 20.0, "padding": [20.0, 20.0, 20.0, 20.0], "childAlignment": "center", "constraintCount": 1 }
-                        },
-                        "children": [
-                          {
-                            "uuid": 1000000000000002611, "name": "MasterSliderRow", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": { "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 50.0], "anchoredPosition": [0.0, 0.0] } },
-                            "children": [
-                              {
-                                "uuid": 1000000000000026111, "name": "MasterLabel", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [0.25, 1.0], "pivot": [0.0, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiLabel": { "text": "Master", "fontSize": 20.0, "fontStyle": "normal", "color": [0.8, 0.82, 0.9, 1.0], "horizontalAlignment": "left", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 1.0 }
-                                },
-                                "children": []
-                              },
-                              {
-                                "uuid": 1000000000000026112, "name": "MasterSlider", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.27, 0.15], "anchorMax": [1.0, 0.85], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiImage": { "colorTint": [0.2, 0.2, 0.25, 0.8] },
-                                  "uiSlider": { "minValue": 0.0, "maxValue": 1.0, "value": 1.0, "stepSize": 0.0, "orientation": "Horizontal", "clickTrackToSet": true, "handleSizeRatio": 0.05, "handleNormalColor": [0.85, 0.88, 0.95, 1.0], "handleHoveredColor": [1.0, 1.0, 1.0, 1.0], "handlePressedColor": [0.6, 0.65, 0.8, 1.0], "handleDisabledColor": [0.4, 0.4, 0.4, 0.5], "fillColor": [0.3, 0.5, 0.85, 1.0], "colorTransitionDuration": 0.1, "interactable": true }
-                                },
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "uuid": 1000000000000002612, "name": "MusicSliderRow", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": { "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 50.0], "anchoredPosition": [0.0, 0.0] } },
-                            "children": [
-                              {
-                                "uuid": 1000000000000026121, "name": "MusicLabel", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [0.25, 1.0], "pivot": [0.0, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiLabel": { "text": "Music", "fontSize": 20.0, "fontStyle": "normal", "color": [0.8, 0.82, 0.9, 1.0], "horizontalAlignment": "left", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 1.0 }
-                                },
-                                "children": []
-                              },
-                              {
-                                "uuid": 1000000000000026122, "name": "MusicSlider", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.27, 0.15], "anchorMax": [1.0, 0.85], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiImage": { "colorTint": [0.2, 0.2, 0.25, 0.8] },
-                                  "uiSlider": { "minValue": 0.0, "maxValue": 1.0, "value": 0.7, "stepSize": 0.0, "orientation": "Horizontal", "clickTrackToSet": true, "handleSizeRatio": 0.05, "handleNormalColor": [0.85, 0.88, 0.95, 1.0], "handleHoveredColor": [1.0, 1.0, 1.0, 1.0], "handlePressedColor": [0.6, 0.65, 0.8, 1.0], "handleDisabledColor": [0.4, 0.4, 0.4, 0.5], "fillColor": [0.3, 0.5, 0.85, 1.0], "colorTransitionDuration": 0.1, "interactable": true }
-                                },
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "uuid": 1000000000000002613, "name": "SFXSliderRow", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": { "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 50.0], "anchoredPosition": [0.0, 0.0] } },
-                            "children": [
-                              {
-                                "uuid": 1000000000000026131, "name": "SFXLabel", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [0.25, 1.0], "pivot": [0.0, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiLabel": { "text": "SFX", "fontSize": 20.0, "fontStyle": "normal", "color": [0.8, 0.82, 0.9, 1.0], "horizontalAlignment": "left", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 1.0 }
-                                },
-                                "children": []
-                              },
-                              {
-                                "uuid": 1000000000000026132, "name": "SFXSlider", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.27, 0.15], "anchorMax": [1.0, 0.85], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiImage": { "colorTint": [0.2, 0.2, 0.25, 0.8] },
-                                  "uiSlider": { "minValue": 0.0, "maxValue": 1.0, "value": 1.0, "stepSize": 0.0, "orientation": "Horizontal", "clickTrackToSet": true, "handleSizeRatio": 0.05, "handleNormalColor": [0.85, 0.88, 0.95, 1.0], "handleHoveredColor": [1.0, 1.0, 1.0, 1.0], "handlePressedColor": [0.6, 0.65, 0.8, 1.0], "handleDisabledColor": [0.4, 0.4, 0.4, 0.5], "fillColor": [0.3, 0.5, 0.85, 1.0], "colorTransitionDuration": 0.1, "interactable": true }
-                                },
-                                "children": []
-                              }
-                            ]
-                          },
-                          {
-                            "uuid": 1000000000000002614, "name": "AmbientSliderRow", "isActive": true,
-                            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                            "components": { "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 50.0], "anchoredPosition": [0.0, 0.0] } },
-                            "children": [
-                              {
-                                "uuid": 1000000000000026141, "name": "AmbientLabel", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [0.25, 1.0], "pivot": [0.0, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiLabel": { "text": "Ambient", "fontSize": 20.0, "fontStyle": "normal", "color": [0.8, 0.82, 0.9, 1.0], "horizontalAlignment": "left", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 1.0 }
-                                },
-                                "children": []
-                              },
-                              {
-                                "uuid": 1000000000000026142, "name": "AmbientSlider", "isActive": true,
-                                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                                "components": {
-                                  "uiRect": { "anchorMin": [0.27, 0.15], "anchorMax": [1.0, 0.85], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                                  "uiImage": { "colorTint": [0.2, 0.2, 0.25, 0.8] },
-                                  "uiSlider": { "minValue": 0.0, "maxValue": 1.0, "value": 0.5, "stepSize": 0.0, "orientation": "Horizontal", "clickTrackToSet": true, "handleSizeRatio": 0.05, "handleNormalColor": [0.85, 0.88, 0.95, 1.0], "handleHoveredColor": [1.0, 1.0, 1.0, 1.0], "handlePressedColor": [0.6, 0.65, 0.8, 1.0], "handleDisabledColor": [0.4, 0.4, 0.4, 0.5], "fillColor": [0.3, 0.5, 0.85, 1.0], "colorTransitionDuration": 0.1, "interactable": true }
-                                },
-                                "children": []
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "uuid": 1000000000000000270,
-                    "name": "GraphicsPanel",
-                    "isActive": false,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 0.88], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] }
-                    },
-                    "children": [
-                      {
-                        "uuid": 1000000000000002701, "name": "GraphicsPlaceholder", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 200.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "Graphics settings will be available in a future update.\n\nResolution, fullscreen, VSync, and quality presets\nwill be configurable here.", "fontSize": 18.0, "fontStyle": "normal", "color": [0.5, 0.55, 0.7, 0.7], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "overflow", "wordWrap": true, "lineSpacing": 1.4, "letterSpacing": 0.5 }
-                        },
-                        "children": []
-                      }
-                    ]
-                  },
-                  {
-                    "uuid": 1000000000000000280,
-                    "name": "ControlsPanel",
-                    "isActive": false,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                    "components": {
-                      "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 0.88], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] }
-                    },
-                    "children": [
-                      {
-                        "uuid": 1000000000000002801, "name": "ControlsPlaceholder", "isActive": true,
-                        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                        "components": {
-                          "uiRect": { "anchorMin": [0.5, 0.5], "anchorMax": [0.5, 0.5], "pivot": [0.5, 0.5], "sizeDelta": [500.0, 300.0], "anchoredPosition": [0.0, 0.0] },
-                          "uiLabel": { "text": "Key bindings will be available in a future update.\n\nW A S D - Movement\nSPACE - Jump\nSHIFT - Sprint\nESC - Pause Menu\nMouse - Look Around", "fontSize": 18.0, "fontStyle": "normal", "color": [0.5, 0.55, 0.7, 0.7], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "overflow", "wordWrap": true, "lineSpacing": 1.4, "letterSpacing": 0.5 }
-                        },
-                        "children": []
-                      }
-                    ]
-                  }
-                ]
+                "uuid": 1000000000000000201
               },
               {
-                "uuid": 1000000000000000220, "name": "BackBtn", "isActive": true,
-                "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
-                "components": {
-                  "uiRect": { "anchorMin": [0.5, 0.03], "anchorMax": [0.5, 0.03], "pivot": [0.5, 0.5], "sizeDelta": [200.0, 50.0], "anchoredPosition": [0.0, 0.0] },
-                  "uiImage": { "colorTint": [0.15, 0.18, 0.25, 0.85] },
-                  "uiButton": { "normalColor": [0.15, 0.18, 0.25, 0.85], "hoveredColor": [0.25, 0.35, 0.55, 0.95], "pressedColor": [0.1, 0.15, 0.25, 1.0], "disabledColor": [0.15, 0.15, 0.15, 0.4], "colorTransitionDuration": 0.15, "interactable": true }
-                },
                 "children": [
                   {
-                    "uuid": 1000000000000002201, "name": "BackBtnLabel", "isActive": true,
-                    "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "components": {
+                              "uiLabel": {
+                                "color": [
+                                  0.8500000238418579,
+                                  0.8799999952316284,
+                                  0.949999988079071,
+                                  1.0
+                                ],
+                                "fontSize": 18.0,
+                                "fontStyle": "bold",
+                                "horizontalAlignment": "center",
+                                "letterSpacing": 2.0,
+                                "lineSpacing": 1.0,
+                                "overflow": "clip",
+                                "text": "AUDIO",
+                                "verticalAlignment": "middle",
+                                "wordWrap": false
+                              },
+                              "uiRect": {
+                                "anchorMax": [
+                                  1.0,
+                                  1.0
+                                ],
+                                "anchorMin": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  0.0,
+                                  0.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "AudioTabBtnLabel",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000025101
+                          }
+                        ],
+                        "components": {
+                          "uiButton": {
+                            "colorTransitionDuration": 0.10000000149011612,
+                            "disabledColor": [
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.4000000059604645
+                            ],
+                            "hoveredColor": [
+                              0.30000001192092896,
+                              0.3499999940395355,
+                              0.5,
+                              1.0
+                            ],
+                            "interactable": true,
+                            "normalColor": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ],
+                            "pressedColor": [
+                              0.15000000596046448,
+                              0.18000000715255737,
+                              0.2800000011920929,
+                              1.0
+                            ]
+                          },
+                          "uiImage": {
+                            "colorTint": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ]
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchorMin": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              180.0,
+                              45.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "AudioTabBtn",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000002510
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "components": {
+                              "uiLabel": {
+                                "color": [
+                                  0.8500000238418579,
+                                  0.8799999952316284,
+                                  0.949999988079071,
+                                  1.0
+                                ],
+                                "fontSize": 18.0,
+                                "fontStyle": "bold",
+                                "horizontalAlignment": "center",
+                                "letterSpacing": 2.0,
+                                "lineSpacing": 1.0,
+                                "overflow": "clip",
+                                "text": "GRAPHICS",
+                                "verticalAlignment": "middle",
+                                "wordWrap": false
+                              },
+                              "uiRect": {
+                                "anchorMax": [
+                                  1.0,
+                                  1.0
+                                ],
+                                "anchorMin": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  0.0,
+                                  0.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "GraphicsTabBtnLabel",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000025111
+                          }
+                        ],
+                        "components": {
+                          "uiButton": {
+                            "colorTransitionDuration": 0.10000000149011612,
+                            "disabledColor": [
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.4000000059604645
+                            ],
+                            "hoveredColor": [
+                              0.30000001192092896,
+                              0.3499999940395355,
+                              0.5,
+                              1.0
+                            ],
+                            "interactable": true,
+                            "normalColor": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ],
+                            "pressedColor": [
+                              0.15000000596046448,
+                              0.18000000715255737,
+                              0.2800000011920929,
+                              1.0
+                            ]
+                          },
+                          "uiImage": {
+                            "colorTint": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ]
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchorMin": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              180.0,
+                              45.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "GraphicsTabBtn",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000002511
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "components": {
+                              "uiLabel": {
+                                "color": [
+                                  0.8500000238418579,
+                                  0.8799999952316284,
+                                  0.949999988079071,
+                                  1.0
+                                ],
+                                "fontSize": 18.0,
+                                "fontStyle": "bold",
+                                "horizontalAlignment": "center",
+                                "letterSpacing": 2.0,
+                                "lineSpacing": 1.0,
+                                "overflow": "clip",
+                                "text": "CONTROLS",
+                                "verticalAlignment": "middle",
+                                "wordWrap": false
+                              },
+                              "uiRect": {
+                                "anchorMax": [
+                                  1.0,
+                                  1.0
+                                ],
+                                "anchorMin": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  0.0,
+                                  0.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "ControlsTabBtnLabel",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000025121
+                          }
+                        ],
+                        "components": {
+                          "uiButton": {
+                            "colorTransitionDuration": 0.10000000149011612,
+                            "disabledColor": [
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.15000000596046448,
+                              0.4000000059604645
+                            ],
+                            "hoveredColor": [
+                              0.30000001192092896,
+                              0.3499999940395355,
+                              0.5,
+                              1.0
+                            ],
+                            "interactable": true,
+                            "normalColor": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ],
+                            "pressedColor": [
+                              0.15000000596046448,
+                              0.18000000715255737,
+                              0.2800000011920929,
+                              1.0
+                            ]
+                          },
+                          "uiImage": {
+                            "colorTint": [
+                              0.20000000298023224,
+                              0.2199999988079071,
+                              0.30000001192092896,
+                              0.8999999761581421
+                            ]
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchorMin": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              180.0,
+                              45.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "ControlsTabBtn",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000002512
+                      }
+                    ],
                     "components": {
-                      "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-                      "uiLabel": { "text": "BACK", "fontSize": 22.0, "fontStyle": "bold", "color": [0.85, 0.88, 0.95, 1.0], "horizontalAlignment": "center", "verticalAlignment": "middle", "overflow": "clip", "wordWrap": false, "lineSpacing": 1.0, "letterSpacing": 2.0 }
+                      "uiLayoutGroup": {
+                        "childAlignment": "center",
+                        "constraintCount": 3,
+                        "direction": "horizontal",
+                        "padding": [
+                          0.0,
+                          0.0,
+                          0.0,
+                          0.0
+                        ],
+                        "spacing": 4.0
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          1.0,
+                          1.0
+                        ],
+                        "anchorMin": [
+                          0.0,
+                          0.8999999761581421
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          0.0,
+                          0.0
+                        ]
+                      }
                     },
-                    "children": []
+                    "isActive": true,
+                    "name": "TabBar",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000251
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiLabel": {
+                                    "color": [
+                                      0.800000011920929,
+                                      0.8199999928474426,
+                                      0.8999999761581421,
+                                      1.0
+                                    ],
+                                    "fontSize": 20.0,
+                                    "fontStyle": "normal",
+                                    "horizontalAlignment": "left",
+                                    "letterSpacing": 1.0,
+                                    "lineSpacing": 1.0,
+                                    "overflow": "clip",
+                                    "text": "Master",
+                                    "verticalAlignment": "middle",
+                                    "wordWrap": false
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      0.25,
+                                      1.0
+                                    ],
+                                    "anchorMin": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.0,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "MasterLabel",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026111
+                              },
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiImage": {
+                                    "colorTint": [
+                                      0.20000000298023224,
+                                      0.20000000298023224,
+                                      0.25,
+                                      0.800000011920929
+                                    ]
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      1.0,
+                                      0.8500000238418579
+                                    ],
+                                    "anchorMin": [
+                                      0.27000001072883606,
+                                      0.15000000596046448
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.5,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  },
+                                  "uiSlider": {
+                                    "clickTrackToSet": true,
+                                    "colorTransitionDuration": 0.10000000149011612,
+                                    "fillColor": [
+                                      0.30000001192092896,
+                                      0.5,
+                                      0.8500000238418579,
+                                      1.0
+                                    ],
+                                    "handleDisabledColor": [
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.5
+                                    ],
+                                    "handleHoveredColor": [
+                                      1.0,
+                                      1.0,
+                                      1.0,
+                                      1.0
+                                    ],
+                                    "handleNormalColor": [
+                                      0.8500000238418579,
+                                      0.8799999952316284,
+                                      0.949999988079071,
+                                      1.0
+                                    ],
+                                    "handlePressedColor": [
+                                      0.6000000238418579,
+                                      0.6499999761581421,
+                                      0.800000011920929,
+                                      1.0
+                                    ],
+                                    "handleSizeRatio": 0.05000000074505806,
+                                    "interactable": true,
+                                    "maxValue": 1.0,
+                                    "minValue": 0.0,
+                                    "orientation": "Horizontal",
+                                    "stepSize": 0.0,
+                                    "value": 1.0
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "MasterSlider",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026112
+                              }
+                            ],
+                            "components": {
+                              "uiRect": {
+                                "anchorMax": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchorMin": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  500.0,
+                                  50.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "MasterSliderRow",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000002611
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiLabel": {
+                                    "color": [
+                                      0.800000011920929,
+                                      0.8199999928474426,
+                                      0.8999999761581421,
+                                      1.0
+                                    ],
+                                    "fontSize": 20.0,
+                                    "fontStyle": "normal",
+                                    "horizontalAlignment": "left",
+                                    "letterSpacing": 1.0,
+                                    "lineSpacing": 1.0,
+                                    "overflow": "clip",
+                                    "text": "Music",
+                                    "verticalAlignment": "middle",
+                                    "wordWrap": false
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      0.25,
+                                      1.0
+                                    ],
+                                    "anchorMin": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.0,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "MusicLabel",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026121
+                              },
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiImage": {
+                                    "colorTint": [
+                                      0.20000000298023224,
+                                      0.20000000298023224,
+                                      0.25,
+                                      0.800000011920929
+                                    ]
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      1.0,
+                                      0.8500000238418579
+                                    ],
+                                    "anchorMin": [
+                                      0.27000001072883606,
+                                      0.15000000596046448
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.5,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  },
+                                  "uiSlider": {
+                                    "clickTrackToSet": true,
+                                    "colorTransitionDuration": 0.10000000149011612,
+                                    "fillColor": [
+                                      0.30000001192092896,
+                                      0.5,
+                                      0.8500000238418579,
+                                      1.0
+                                    ],
+                                    "handleDisabledColor": [
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.5
+                                    ],
+                                    "handleHoveredColor": [
+                                      1.0,
+                                      1.0,
+                                      1.0,
+                                      1.0
+                                    ],
+                                    "handleNormalColor": [
+                                      0.8500000238418579,
+                                      0.8799999952316284,
+                                      0.949999988079071,
+                                      1.0
+                                    ],
+                                    "handlePressedColor": [
+                                      0.6000000238418579,
+                                      0.6499999761581421,
+                                      0.800000011920929,
+                                      1.0
+                                    ],
+                                    "handleSizeRatio": 0.05000000074505806,
+                                    "interactable": true,
+                                    "maxValue": 1.0,
+                                    "minValue": 0.0,
+                                    "orientation": "Horizontal",
+                                    "stepSize": 0.0,
+                                    "value": 0.699999988079071
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "MusicSlider",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026122
+                              }
+                            ],
+                            "components": {
+                              "uiRect": {
+                                "anchorMax": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchorMin": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  500.0,
+                                  50.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "MusicSliderRow",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000002612
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiLabel": {
+                                    "color": [
+                                      0.800000011920929,
+                                      0.8199999928474426,
+                                      0.8999999761581421,
+                                      1.0
+                                    ],
+                                    "fontSize": 20.0,
+                                    "fontStyle": "normal",
+                                    "horizontalAlignment": "left",
+                                    "letterSpacing": 1.0,
+                                    "lineSpacing": 1.0,
+                                    "overflow": "clip",
+                                    "text": "SFX",
+                                    "verticalAlignment": "middle",
+                                    "wordWrap": false
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      0.25,
+                                      1.0
+                                    ],
+                                    "anchorMin": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.0,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "SFXLabel",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026131
+                              },
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiImage": {
+                                    "colorTint": [
+                                      0.20000000298023224,
+                                      0.20000000298023224,
+                                      0.25,
+                                      0.800000011920929
+                                    ]
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      1.0,
+                                      0.8500000238418579
+                                    ],
+                                    "anchorMin": [
+                                      0.27000001072883606,
+                                      0.15000000596046448
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.5,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  },
+                                  "uiSlider": {
+                                    "clickTrackToSet": true,
+                                    "colorTransitionDuration": 0.10000000149011612,
+                                    "fillColor": [
+                                      0.30000001192092896,
+                                      0.5,
+                                      0.8500000238418579,
+                                      1.0
+                                    ],
+                                    "handleDisabledColor": [
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.5
+                                    ],
+                                    "handleHoveredColor": [
+                                      1.0,
+                                      1.0,
+                                      1.0,
+                                      1.0
+                                    ],
+                                    "handleNormalColor": [
+                                      0.8500000238418579,
+                                      0.8799999952316284,
+                                      0.949999988079071,
+                                      1.0
+                                    ],
+                                    "handlePressedColor": [
+                                      0.6000000238418579,
+                                      0.6499999761581421,
+                                      0.800000011920929,
+                                      1.0
+                                    ],
+                                    "handleSizeRatio": 0.05000000074505806,
+                                    "interactable": true,
+                                    "maxValue": 1.0,
+                                    "minValue": 0.0,
+                                    "orientation": "Horizontal",
+                                    "stepSize": 0.0,
+                                    "value": 1.0
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "SFXSlider",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026132
+                              }
+                            ],
+                            "components": {
+                              "uiRect": {
+                                "anchorMax": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchorMin": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  500.0,
+                                  50.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "SFXSliderRow",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000002613
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiLabel": {
+                                    "color": [
+                                      0.800000011920929,
+                                      0.8199999928474426,
+                                      0.8999999761581421,
+                                      1.0
+                                    ],
+                                    "fontSize": 20.0,
+                                    "fontStyle": "normal",
+                                    "horizontalAlignment": "left",
+                                    "letterSpacing": 1.0,
+                                    "lineSpacing": 1.0,
+                                    "overflow": "clip",
+                                    "text": "Ambient",
+                                    "verticalAlignment": "middle",
+                                    "wordWrap": false
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      0.25,
+                                      1.0
+                                    ],
+                                    "anchorMin": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.0,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "AmbientLabel",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026141
+                              },
+                              {
+                                "children": [],
+                                "components": {
+                                  "uiImage": {
+                                    "colorTint": [
+                                      0.20000000298023224,
+                                      0.20000000298023224,
+                                      0.25,
+                                      0.800000011920929
+                                    ]
+                                  },
+                                  "uiRect": {
+                                    "anchorMax": [
+                                      1.0,
+                                      0.8500000238418579
+                                    ],
+                                    "anchorMin": [
+                                      0.27000001072883606,
+                                      0.15000000596046448
+                                    ],
+                                    "anchoredPosition": [
+                                      0.0,
+                                      0.0
+                                    ],
+                                    "pivot": [
+                                      0.5,
+                                      0.5
+                                    ],
+                                    "sizeDelta": [
+                                      0.0,
+                                      0.0
+                                    ]
+                                  },
+                                  "uiSlider": {
+                                    "clickTrackToSet": true,
+                                    "colorTransitionDuration": 0.10000000149011612,
+                                    "fillColor": [
+                                      0.30000001192092896,
+                                      0.5,
+                                      0.8500000238418579,
+                                      1.0
+                                    ],
+                                    "handleDisabledColor": [
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.4000000059604645,
+                                      0.5
+                                    ],
+                                    "handleHoveredColor": [
+                                      1.0,
+                                      1.0,
+                                      1.0,
+                                      1.0
+                                    ],
+                                    "handleNormalColor": [
+                                      0.8500000238418579,
+                                      0.8799999952316284,
+                                      0.949999988079071,
+                                      1.0
+                                    ],
+                                    "handlePressedColor": [
+                                      0.6000000238418579,
+                                      0.6499999761581421,
+                                      0.800000011920929,
+                                      1.0
+                                    ],
+                                    "handleSizeRatio": 0.05000000074505806,
+                                    "interactable": true,
+                                    "maxValue": 1.0,
+                                    "minValue": 0.0,
+                                    "orientation": "Horizontal",
+                                    "stepSize": 0.0,
+                                    "value": 0.5
+                                  }
+                                },
+                                "isActive": true,
+                                "name": "AmbientSlider",
+                                "transform": {
+                                  "isStatic": false,
+                                  "position": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "rotation": [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                  ],
+                                  "scale": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                  ]
+                                },
+                                "uuid": 1000000000000026142
+                              }
+                            ],
+                            "components": {
+                              "uiRect": {
+                                "anchorMax": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchorMin": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "anchoredPosition": [
+                                  0.0,
+                                  0.0
+                                ],
+                                "pivot": [
+                                  0.5,
+                                  0.5
+                                ],
+                                "sizeDelta": [
+                                  500.0,
+                                  50.0
+                                ]
+                              }
+                            },
+                            "isActive": true,
+                            "name": "AmbientSliderRow",
+                            "transform": {
+                              "isStatic": false,
+                              "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                              ],
+                              "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                              ]
+                            },
+                            "uuid": 1000000000000002614
+                          }
+                        ],
+                        "components": {
+                          "uiLayoutGroup": {
+                            "childAlignment": "center",
+                            "constraintCount": 1,
+                            "direction": "vertical",
+                            "padding": [
+                              20.0,
+                              20.0,
+                              20.0,
+                              20.0
+                            ],
+                            "spacing": 20.0
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.8999999761581421,
+                              0.8999999761581421
+                            ],
+                            "anchorMin": [
+                              0.10000000149011612,
+                              0.15000000596046448
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "AudioSlidersLayout",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000000261
+                      }
+                    ],
+                    "components": {
+                      "uiRect": {
+                        "anchorMax": [
+                          1.0,
+                          0.8799999952316284
+                        ],
+                        "anchorMin": [
+                          0.0,
+                          0.0
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "AudioPanel",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000260
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "components": {
+                          "uiLabel": {
+                            "color": [
+                              0.5,
+                              0.550000011920929,
+                              0.699999988079071,
+                              0.699999988079071
+                            ],
+                            "fontSize": 18.0,
+                            "fontStyle": "normal",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 0.5,
+                            "lineSpacing": 1.399999976158142,
+                            "overflow": "overflow",
+                            "text": "Graphics settings will be available in a future update.\n\nResolution, fullscreen, VSync, and quality presets\nwill be configurable here.",
+                            "verticalAlignment": "middle",
+                            "wordWrap": true
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchorMin": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              500.0,
+                              200.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "GraphicsPlaceholder",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000002701
+                      }
+                    ],
+                    "components": {
+                      "uiRect": {
+                        "anchorMax": [
+                          1.0,
+                          0.8799999952316284
+                        ],
+                        "anchorMin": [
+                          0.0,
+                          0.0
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    },
+                    "isActive": false,
+                    "name": "GraphicsPanel",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000270
+                  },
+                  {
+                    "children": [
+                      {
+                        "children": [],
+                        "components": {
+                          "uiLabel": {
+                            "color": [
+                              0.5,
+                              0.550000011920929,
+                              0.699999988079071,
+                              0.699999988079071
+                            ],
+                            "fontSize": 18.0,
+                            "fontStyle": "normal",
+                            "horizontalAlignment": "center",
+                            "letterSpacing": 0.5,
+                            "lineSpacing": 1.399999976158142,
+                            "overflow": "overflow",
+                            "text": "Key bindings will be available in a future update.\n\nW A S D - Movement\nSPACE - Jump\nSHIFT - Sprint\nESC - Pause Menu\nMouse - Look Around",
+                            "verticalAlignment": "middle",
+                            "wordWrap": true
+                          },
+                          "uiRect": {
+                            "anchorMax": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchorMin": [
+                              0.5,
+                              0.5
+                            ],
+                            "anchoredPosition": [
+                              0.0,
+                              0.0
+                            ],
+                            "pivot": [
+                              0.5,
+                              0.5
+                            ],
+                            "sizeDelta": [
+                              500.0,
+                              300.0
+                            ]
+                          }
+                        },
+                        "isActive": true,
+                        "name": "ControlsPlaceholder",
+                        "transform": {
+                          "isStatic": false,
+                          "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "rotation": [
+                            0.0,
+                            0.0,
+                            0.0
+                          ],
+                          "scale": [
+                            1.0,
+                            1.0,
+                            1.0
+                          ]
+                        },
+                        "uuid": 1000000000000002801
+                      }
+                    ],
+                    "components": {
+                      "uiRect": {
+                        "anchorMax": [
+                          1.0,
+                          0.8799999952316284
+                        ],
+                        "anchorMin": [
+                          0.0,
+                          0.0
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    },
+                    "isActive": false,
+                    "name": "ControlsPanel",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000000280
                   }
-                ]
+                ],
+                "components": {
+                  "uiRect": {
+                    "anchorMax": [
+                      0.8500000238418579,
+                      0.8500000238418579
+                    ],
+                    "anchorMin": [
+                      0.15000000596046448,
+                      0.11999999731779099
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      0.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      0.0,
+                      0.0
+                    ]
+                  },
+                  "uiTabs": {
+                    "activeTabIndex": 0,
+                    "tabBarPosition": "Top"
+                  }
+                },
+                "isActive": true,
+                "name": "SettingsTabs",
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "uuid": 1000000000000000250
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "components": {
+                      "uiLabel": {
+                        "color": [
+                          0.8500000238418579,
+                          0.8799999952316284,
+                          0.949999988079071,
+                          1.0
+                        ],
+                        "fontSize": 22.0,
+                        "fontStyle": "bold",
+                        "horizontalAlignment": "center",
+                        "letterSpacing": 2.0,
+                        "lineSpacing": 1.0,
+                        "overflow": "clip",
+                        "text": "BACK",
+                        "verticalAlignment": "middle",
+                        "wordWrap": false
+                      },
+                      "uiRect": {
+                        "anchorMax": [
+                          1.0,
+                          1.0
+                        ],
+                        "anchorMin": [
+                          0.0,
+                          0.0
+                        ],
+                        "anchoredPosition": [
+                          0.0,
+                          0.0
+                        ],
+                        "pivot": [
+                          0.5,
+                          0.5
+                        ],
+                        "sizeDelta": [
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    },
+                    "isActive": true,
+                    "name": "BackBtnLabel",
+                    "transform": {
+                      "isStatic": false,
+                      "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                      ],
+                      "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                      ]
+                    },
+                    "uuid": 1000000000000002201
+                  }
+                ],
+                "components": {
+                  "uiButton": {
+                    "colorTransitionDuration": 0.15000000596046448,
+                    "disabledColor": [
+                      0.15000000596046448,
+                      0.15000000596046448,
+                      0.15000000596046448,
+                      0.4000000059604645
+                    ],
+                    "hoveredColor": [
+                      0.25,
+                      0.3499999940395355,
+                      0.550000011920929,
+                      0.949999988079071
+                    ],
+                    "interactable": true,
+                    "normalColor": [
+                      0.15000000596046448,
+                      0.18000000715255737,
+                      0.25,
+                      0.8500000238418579
+                    ],
+                    "pressedColor": [
+                      0.10000000149011612,
+                      0.15000000596046448,
+                      0.25,
+                      1.0
+                    ]
+                  },
+                  "uiImage": {
+                    "colorTint": [
+                      0.15000000596046448,
+                      0.18000000715255737,
+                      0.25,
+                      0.8500000238418579
+                    ]
+                  },
+                  "uiRect": {
+                    "anchorMax": [
+                      0.5,
+                      0.029999999329447746
+                    ],
+                    "anchorMin": [
+                      0.5,
+                      0.029999999329447746
+                    ],
+                    "anchoredPosition": [
+                      0.0,
+                      0.0
+                    ],
+                    "pivot": [
+                      0.5,
+                      0.5
+                    ],
+                    "sizeDelta": [
+                      200.0,
+                      50.0
+                    ]
+                  }
+                },
+                "isActive": true,
+                "name": "BackBtn",
+                "transform": {
+                  "isStatic": false,
+                  "position": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "rotation": [
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                "uuid": 1000000000000000220
               }
-            ]
-          },
-          {
-            "uuid": 1000000000000000300, "name": "FadeOverlay", "isActive": false,
-            "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+            ],
             "components": {
-              "uiRect": { "anchorMin": [0.0, 0.0], "anchorMax": [1.0, 1.0], "pivot": [0.5, 0.5], "sizeDelta": [0.0, 0.0], "anchoredPosition": [0.0, 0.0] },
-              "uiImage": { "colorTint": [0.0, 0.0, 0.0, 0.0] },
-              "uiAnimation": {
-                "rootNode": { "type": "Clip", "loopMode": "Once", "clip": { "property": "Opacity", "startValue": 0.0, "endValue": 1.0, "duration": 1.2, "delay": 0.0, "easing": "EaseIn", "loopMode": "Once" } },
-                "autoPlay": true
+              "uiImage": {
+                "colorTint": [
+                  0.05000000074505806,
+                  0.05000000074505806,
+                  0.10000000149011612,
+                  0.8500000238418579
+                ]
+              },
+              "uiRect": {
+                "anchorMax": [
+                  1.0,
+                  1.0
+                ],
+                "anchorMin": [
+                  0.0,
+                  0.0
+                ],
+                "anchoredPosition": [
+                  0.0,
+                  0.0
+                ],
+                "pivot": [
+                  0.5,
+                  0.5
+                ],
+                "sizeDelta": [
+                  0.0,
+                  0.0
+                ]
               }
             },
-            "children": []
+            "isActive": false,
+            "name": "SettingsPanel",
+            "transform": {
+              "isStatic": false,
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "uuid": 1000000000000000200
+          },
+          {
+            "children": [],
+            "components": {
+              "uiAnimation": {
+                "autoPlay": true,
+                "rootNode": {
+                  "clip": {
+                    "delay": 0.0,
+                    "duration": 1.2000000476837158,
+                    "easing": "EaseIn",
+                    "endValue": 1.0,
+                    "loopMode": "Once",
+                    "property": "Opacity",
+                    "startValue": 0.0
+                  },
+                  "loopMode": "Once",
+                  "type": "Clip"
+                }
+              },
+              "uiImage": {
+                "colorTint": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "uiRect": {
+                "anchorMax": [
+                  1.0,
+                  1.0
+                ],
+                "anchorMin": [
+                  0.0,
+                  0.0
+                ],
+                "anchoredPosition": [
+                  0.0,
+                  0.0
+                ],
+                "pivot": [
+                  0.5,
+                  0.5
+                ],
+                "sizeDelta": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "isActive": false,
+            "name": "FadeOverlay",
+            "transform": {
+              "isStatic": false,
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "uuid": 1000000000000000300
           }
-        ]
+        ],
+        "components": {
+          "uiCanvas": {
+            "pixelsPerUnit": 100.0,
+            "referenceHeight": 1080.0,
+            "referenceWidth": 1920.0,
+            "scaleMode": "scaleWithScreenSize"
+          }
+        },
+        "isActive": true,
+        "name": "UICanvas",
+        "transform": {
+          "isStatic": false,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "uuid": 1000000000000000010
       },
       {
-        "uuid": 1000000000000000400, "name": "MenuController", "isActive": true,
-        "transform": { "position": [0.0, 0.0, 0.0], "rotation": [0.0, 0.0, 0.0], "scale": [1.0, 1.0, 1.0], "isStatic": false },
+        "children": [],
         "components": {
           "script": {
             "scripts": [
-              { "scriptRef": { "guid": "", "refPath": "scripts/game/menu/MainMenuController.mt" }, "enabled": true }
+              {
+                "enabled": true,
+                "scriptRef": "0000000000000000"
+              }
             ]
           }
         },
-        "children": []
+        "isActive": true,
+        "name": "MenuController",
+        "transform": {
+          "isStatic": false,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "uuid": 1000000000000000400
+      },
+      {
+        "children": [],
+        "components": {
+          "billboard": {
+            "atlasIndex": 0,
+            "colorTint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "editorOnly": true,
+            "iconType": "directionalLight",
+            "selectable": true,
+            "size": [
+              64.0,
+              64.0
+            ],
+            "sizeMode": "screenSpace"
+          },
+          "directionalLight": {
+            "color": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "intensity": 1.0,
+            "lightSize": 1.0,
+            "showGizmo": false
+          }
+        },
+        "isActive": true,
+        "name": "Sun",
+        "transform": {
+          "isStatic": true,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            5.0,
+            30.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "uuid": 580854130322380925
       }
-    ]
+    ],
+    "components": {},
+    "isActive": true,
+    "name": "Root",
+    "transform": {
+      "isStatic": true,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "uuid": 12897697530608323519
   },
   "version": "1.0"
 }
